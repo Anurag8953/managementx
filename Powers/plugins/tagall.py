@@ -1,6 +1,6 @@
-from Powers import Gojo
 import asyncio
 import random
+from Powers.bot_class import Gojo
 from pyrogram import Client, filters
 from pyrogram.errors import UserNotParticipant
 from pyrogram.types import ChatPermissions
