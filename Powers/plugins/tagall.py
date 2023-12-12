@@ -147,7 +147,7 @@ async def mentionall(client, message):
     except UserNotParticipant:
         is_admin = False
     else:
-        if participant.status == ChatMemberStatus.ADMINISTRATOR || participant.status == ChatMemberStatus.OWNER:
+        if participant.status == ChatMemberStatus.ADMINISTRATOR or participant.status == ChatMemberStatus.OWNER:
             is_admin = True
     if not is_admin:
         return await message.reply("𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 𝐁𝐚𝐛𝐲, 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧𝐬 𝐂𝐚𝐧 𝐓𝐚𝐠 𝐌𝐞𝐦𝐛𝐞𝐫𝐬. ")
@@ -200,7 +200,7 @@ async def cancel_spam(client, message):
     except UserNotParticipant:
         is_admin = False
     else:
-        if participant.status == ChatMemberStatus.ADMINISTRATOR || participant.status == ChatMemberStatus.OWNER:
+        if participant.status == ChatMemberStatus.ADMINISTRATOR or participant.status == ChatMemberStatus.OWNER:
             is_admin = True
     if not is_admin:
         return await message.reply("𝐘𝐨𝐮 𝐀𝐫𝐞 𝐍𝐨𝐭 𝐀𝐝𝐦𝐢𝐧 𝐁𝐚𝐛𝐲, 𝐎𝐧𝐥𝐲 𝐀𝐝𝐦𝐢𝐧𝐬 𝐂𝐚𝐧 𝐓𝐚𝐠 𝐌𝐞𝐦𝐛𝐞𝐫𝐬.")
